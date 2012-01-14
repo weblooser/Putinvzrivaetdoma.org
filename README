@@ -1,0 +1,7 @@
+Putinvzrivaetdoma uses YShout chat, JQuery, kcaptcha.
+
+Set mysql config in /online/stats.php
+
+Set chat admin pass in /chat/logs/yshout.prefs.txt (broken now).
+
+JSON users stats for JS include: /online/online.php?callback=callback_function
