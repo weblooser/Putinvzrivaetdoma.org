@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Низкоорбитальная Ионная Пушка | Путин Взрывает Дома</title>
+<meta charset="utf-8">
+<meta name="keywords" content="LOIC, НИП, ДДОС, DDOS, путин взрывает дома " />
+<meta name="title" content="Путин Взрывает Дома" />
+<meta name="description" content="Путинвзрываетдома — инструмент для проведения коллективных распределенных ddos-атак (от англ. Denial of Service, Отказ в обслуживании) целью которых является выведение сайтов из строя путем перегрузки мощностей атакуемых серверов. Каждый посетитель может принять участие в атаке, добровольно предоставляя ресурсы своего компьютера. Принцип атаки базируется на открытии большого количества подключений с помощью JavaScript на клиентской стороне." />
+<link rel="image_src" href="images/vk.png" />
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="images/iicon.png"/>
+<link href="styles/mobile.css" rel="stylesheet" type="text/css">
+<link rel="openid.server" href="http://www.myopenid.com/server" />
+<link rel="openid.delegate" href="http://xn----7sbfaqjf4bqoeoie1a9h.myopenid.com/" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript" src="http://vkontakte.ru/js/api/share.js?10" charset="utf-8"></script>
+<script type="text/javascript" src="scripts/loic.js"></script>
+<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?20"></script>
+<script type="text/javascript">
+	VK.init({apiId: 2144901});
+</script>
+</head> 
+<body>
+<div id="container">
+	<div id="header">
+		<div id="logo">
+			<div id="matrix"></div>
+		</div>
+	</div>
+	<div id="wrapper1">
+		<div id="attackStats">
+			<div class="stat">
+                                <div class="tooltip" id="Очки опыта начисляются за время, проведенное в режиме атаки" >
+                                        <img src="images/ion.png" alt="ion"><span id="succeededCtr"></span>
+                                </div>
+
+
+                                <div class="tooltip" id="Чем больше опыта, тем выше звание">
+                                        <span id="statsTitle"></span>
+                                </div>
+                                <div class="achive" id="statsChatcolor">
+                                    <div class="tooltip" id="Цвет в чате">
+                                        <a href="#" rel="popuprel3" class="popup" title="Магазин">&nbsp;</a>
+                                    </div>
+                                </div>
+			</div>
+			<div id="loginArea">
+				<form id="loginForm">
+					<div id="loginMessages"></div>
+					<div class="tooltip" id="Введите ваш секретный пароль" >
+						<input id="loginPass" name="nick" type="password" size="16" maxlength="32" value="..............."></input>
+					</div>
+					<br>
+				</form>
+				<div class="buttons">
+					<span id="logoutButton">Выйти</span>
+					<span id="loginButton">Войти</span>
+					<span id="regButton">Регистрация</span>
+				</div>
+			</div>
+			<div id="regArea">		
+				<form id="regForm" action="#">
+				<div id="regMessages"></div>
+					<div class="tooltip" id="Секретный пароль: минимум 8 символов, только цифры и буквы английского алфавита">
+						<input id="regPass" name="nick" type="text" size="16" maxlength="32" value="...............">
+					</div>
+					<div id="captchaForm">
+						<img id='captchaimage' src='' alt="captcha">
+						<div class="tooltip" id="Введите символы с картинки" >
+							<input id="captcha" type="text" name="keystring" size="7" maxlength="7">
+						</div>
+					</div>
+				</form>
+				<div class="buttons">
+                                    <span class="tooltip" id="Зарегистрироваться">
+                                            <span id="register_now">OK</span>
+                                    </span>
+                                    <span class="tooltip" id="Вернуться в окно входа">
+					<span id="close_reg">Закрыть</span>
+                                    </span>
+				</div>
+			</div>
+		</div>
+                        <div id="fire">
+    			</div>
+			<div id="smoke">
+			</div> 
+		<div id="attackModule">
+			<div id="Мощность пушки" class="tooltip">
+				<canvas id="arrow" width="100" height="80"></canvas>
+			</div>
+			<div id="privet">
+				<div id="vk_like" style="position:relative; margin-top:-43px; margin-left:10px;"></div>
+				<script type="text/javascript">
+				$(function(){VK.Widgets.Like("vk_like", {type: "vertical"})});
+				</script>
+			</div>
+                        <img src="tar.jpg" alt="Цель" id="targetimage"/>
+<!--#include file="reason.html" -->
+			<div id="Начать атаку" class="tooltip firetooltip">
+				<div id="fireButton" style="cursor: pointer;"></div>
+			</div>
+			<div class="online tooltip" id="Атакующих / Всего на сайте">
+				<div id="attackcontainer"></div>
+				<div id="barWrap">
+					<div id="barLineWrap">
+						<div id="barLine"></div>
+					</div>
+				</div>
+				<div id="responsecontainer"></div>
+			</div>
+		</div>
+	</div>
+	<div id="wrapper2">
+		<div id="infoModule">
+			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+			<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'profile',
+				  rpp: 6,
+				  interval: 4000,
+				  width: 350,
+				  height: 300,
+				  theme: {
+					shell: {
+					  background: '#222222',
+					  color: '#76b2db'
+					},
+					tweets: {
+					  background: '#000000',
+					  color: '#999999',
+					  links: '#78b3db'
+					}
+				  },
+				  features: {
+					scrollbar: false,
+					loop: false,
+					live: false,
+					hashtags: true,
+					timestamp: true,
+					avatars: false,
+					behavior: 'default'
+				  }
+				}).render().setUser('putinvzrivaet').start();
+			</script><br>
+			<div id="infoText">
+				<p>Путинвзрываетдома&nbsp;&mdash; инструмент для проведения коллективных распределенных ddos-атак (от&nbsp;англ. Denial of&nbsp;Service, Отказ в&nbsp;обслуживании) целью которых является выведение сайтов из&nbsp;строя путем перегрузки мощностей атакуемых серверов. Каждый посетитель может принять участие в&nbsp;атаке, добровольно предоставляя ресурсы своего компьютера. Принцип атаки базируется на&nbsp;открытии большого количества подключений с&nbsp;помощью JavaScript на&nbsp;клиентской стороне. Вы&nbsp;можете приятно пообщаться в&nbsp;чате, внести свои <a href="http://putinvzrivaetdom.userecho.com/" target="_blank"> предложения</a> и&nbsp;посмотреть <a href="http://picasaweb.google.com/107202058879668455478/OpyXOH#" title="Победы" target="_blank">список побед.</a></p>
+				<p>Последние новости в&nbsp;нашем <a href="http://twitter.com/#!/putinvzrivaet" target="_blank">твиттере</a>.</p>
+				<p>Наша страница <a href="http://vkontakte.ru/putingun" target="blank">Вконтакте</a>.</p>
+				<p>
+					Наш сайт доступен по&nbsp;адресам:
+					<br>
+					<a href="http://putinvzrivaetdoma.org/" title="putinvzrivaetdoma.org">http://putinvzrivaetdoma.org/</a><br>
+                                        <a href="http://putinvzrivaetdoma.com/" title="putinvzrivaetdoma.com">http://putinvzrivaetdoma.com/</a><br>
+                                        <a href="http://p-v-d.org/" title="p-v-d.org">http://p-v-d.org/</a>
+                                </p>
+                                <p>
+                                        Отобранные у нас домены:<br>
+
+					<a style="text-decoration:line-through; color: red;" href="http://путинвзрывает.рф/">http://путинвзрывает.рф/</a><br>
+					<a style="text-decoration:line-through; color: red;" href="http://путинвзрываетметро.рф/">http://путинвзрываетметро.рф/</a><br>
+					<a style="text-decoration:line-through; color: red;" href="http://путинвзрываетдома.рф/">http://путинвзрываетдома.рф/</a><br>
+				</p>
+			</div>
+		</div>
+		<div id="chatModule">
+			<noindex>
+			<div id="chatmessage"><p>Войти в чат</p></div>
+			<div id="ys-input-smiles">
+                            <img src="./chat/smileys/spa.gif" title=":spa:"/>
+                            <img src="./chat/smileys/adv.gif" title=":adv:"/>
+                            <img src="./chat/smileys/tro.gif" title=":tro:"/>
+                            <img src="./chat/smileys/ad.gif" title=":ad:"/>
+                            <img src="./chat/smileys/oms.gif" title=":oms:"/>
+                            <img src="./chat/smileys/mih.gif" title=":mih:"/>
+                            <img src="./chat/smileys/kom.gif" title=":kom:"/>
+                            <img src="./chat/smileys/grm.gif" title=":grm:"/>
+                            <img src="./chat/smileys/cat.gif" title=":cat:"/>
+                            <img src="./chat/smileys/tea.gif" title=":tea:"/>
+                            <img src="./chat/smileys/bug.gif" title=":bug:"/>
+                            <img src="./chat/smileys/pled.gif" title=":nya:"/>
+                            <img src="./chat/smileys/ato.gif" title=":ato:"/>
+                            <img src="./chat/smileys/kam.gif" title=":kam:"/>
+                            <img src="./chat/smileys/dm.gif" title=":max:"/>
+                            <img src="./chat/smileys/poc.gif" title=":poc:"/>
+                            <img src="./chat/smileys/med.gif" title=":med:"/>
+                            <img src="./chat/smileys/ok.gif" title=":ok:"/>
+                            <img src="./chat/smileys/fu.gif" title=":fu:"/>
+                            <img src="./chat/smileys/ulit.gif" title=":ul:"/>
+                            <img src="./chat/smileys/fsb.gif" title=":fsb:"/>
+                            <img src="./chat/smileys/pvd.gif" title=":pvd:"/>
+                            <img src="./chat/smileys/tema.gif" title=":tem:"/>
+                            <img src="./chat/smileys/omg.gif" title=":omg:"/>
+                            <img src="./chat/smileys/bm.gif" title=":bm:"/>
+                            <img src="./chat/smileys/fp.gif" title=":fp:"/>
+                            <img src="./chat/smileys/smile.gif" title=":lol:"/>
+                            <img src="./chat/smileys/pist.gif" title=":pis:"/>
+                            <img src="./chat/smileys/alone.gif" title=":aln:"/>
+                            <img src="./chat/smileys/rr.gif" title=":cry:"/>
+                            <img src="./chat/smileys/sad.gif" title=":sad:"/>
+                            <img src="./chat/smileys/rage.gif" title=":rag:"/>
+                            <img src="./chat/smileys/tian.gif" title=":t:"/>
+                            <img src="./chat/smileys/il.gif" title=":il:"/>
+                            <img src="./chat/smileys/cancer.gif" title=":rak:"/>
+                            <img src="./chat/smileys/f.gif" title=":f:"/>
+                            <img src="./chat/smileys/nigra.gif" title=":nig:"/>
+                            <img src="./chat/smileys/pet.gif" title=":pet:"/>
+                            <img src="./chat/smileys/b.gif" title=":b:"/>
+                            <img src="./chat/smileys/mrgreen.gif" title=":grn:"/>
+                            <img src="./chat/smileys/slow.gif" title=":slo:"/>
+                            <img src="./chat/smileys/troll.gif" title=":trl:"/>
+                            <img src="./chat/smileys/nomad.gif" title=":nom:"/>
+			</div>
+			</noindex>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footImage">
+			<div id="footText">
+				<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="200">
+							<script type="text/javascript">document.write(VK.Share.button({url: "http://putinvzrivaetdoma.org/"},{type: "round", text: "Взорвать Вконтакте"}));</script>
+						</td>
+						<td width="125"><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://putinvzrivaetdoma.org/" data-text="Путин Взрывает Дома" data-count="horizontal" data-via="putinvzrivaet">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></td>
+						<td width="175"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.putinvzrivaetdoma.org%2F&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe></td>
+					</tr>
+				</table>
+				<br>
+				<a href="#" rel="popuprel" class="popup" title="Наши юзербары">Userbars</a>&nbsp;&nbsp;
+				<a href="donate.html" target="_blank">Поддержать проект</a>&nbsp;&nbsp;
+				<a href="http://putinvzrivaetdom.userecho.com/" target="_blank">Ваши предложения</a>&nbsp;&nbsp;
+				<a href="mailto:putin.vzrivaet@mail.com">Напишите нам</a>&nbsp;&nbsp;
+				<a href="http://picasaweb.google.com/107202058879668455478/OpyXOH#" title="Победы" target="_blank">Победы</a>&nbsp;&nbsp;
+				<a href="http://putinvzrivaetdoma.org/" title="putinvzrivaetdoma.org" rel="sidebar" onClick="return createBookmark('putinvzrivaetdoma.org')">В закладки</a>&nbsp;&nbsp;
+				<a href="http://sourceforge.net/projects/loic/" target="_blank">Loic.exe</a><br>
+				<div id="disclamer">Администрация сайта не несет ответственности за последствия деятельности пользователей.</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popupbox" id="popuprel">
+	<div id="intabdiv">
+		<img src="http://super-pvd.narod2.ru/putinuserbar.jpg" width="350" height="20"><br>
+		[url=http://putinvzrivaetdoma.org/][img]http://super-pvd.narod2.ru/putinuserbar.jpg[/img][/url]<br>
+		<br><img src="http://super-pvd.narod2.ru/putinuserbar2.jpg" width="350" height="20"><br>
+		[url=http://putinvzrivaetdoma.org/][img]http://super-pvd.narod2.ru/putinuserbar2.jpg[/img][/url]<br>
+		<br><img src="http://super-pvd.narod2.ru/putinuserbar3.jpg" width="350" height="20"><br>
+
+		[url=http://putinvzrivaetdoma.org/][img]http://super-pvd.narod2.ru/putinuserbar3.jpg[/img][/url]<br>
+		<br><img src="http://super-pvd.narod2.ru/putinuserbar4.jpg" width="350" height="20"><br>
+		[url=http://putinvzrivaetdoma.org/][img]http://super-pvd.narod2.ru/putinuserbar4.jpg[/img][/url]<br>
+
+
+		<br><img src="http://super-pvd.narod2.ru/putinuserbar5.jpg" width="350" height="20"><br>
+		[url=http://putinvzrivaetdoma.org/][img]http://super-pvd.narod2.ru/putinuserbar5.jpg[/img][/url]<br>
+		<br>
+	</div>
+</div>
+<div class="popupbox" id="popuprel2">
+
+</div>
+<div class="popupbox" id="popuprel3">
+    <form id="buyColorForm" action="" style="width: 200px;">
+        <div>Постоянный цвет в чате.
+            <div class="tooltip" id="Стоимость" >
+                <div class="price"><img src="images/ion.png" alt="ion">50 000</div>
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="tooltip" id="Выбор цвета" >
+                <input type="text" id="buyColorInput" name="color" value="#000000" size="8" maxlength="7"/><span id="buyColorButton" class="buyButton">Купить</span>
+            </div>
+        </div>
+        <div id="picker"></div>
+    </form>
+</div>
+<div id="counter">
+
+	<!-- Yandex.Metrika counter -->
+	<div style="display:none;">
+		<script type="text/javascript">
+		(function(w, c) {
+			(w[c] = w[c] || []).push(function() {
+				try {
+					w.yaCounter3851905 = new Ya.Metrika(3851905);
+					 yaCounter3851905.clickmap(true);
+					 yaCounter3851905.trackLinks(true);
+				
+				} catch(e) { }
+			});
+		})(window, 'yandex_metrika_callbacks');
+		</script>
+	</div>
+	<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
+	<noscript><div style="position:absolute"><img src="//mc.yandex.ru/watch/3851905" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+	<!--LiveInternet counter-->
+	<script type="text/javascript"><!--
+	document.write("<a href='http://www.liveinternet.ru/click' "+
+	"target=_blank><img src='//counter.yadro.ru/hit?t26.6;r"+
+	escape(document.referrer)+((typeof(screen)=="undefined")?"":
+	";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+	screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+	";"+Math.random()+
+	"' alt='' title='LiveInternet: показано число посетителей за"+
+	" сегодня' "+
+	"border='0' width='88' height='15'><\/a>")
+	//-->
+	</script>
+	<!--/LiveInternet-->
+</div>
+<div id="fade"></div>
+<div id="reloader" style="display: none;"></div>
+</body>
+</html>
