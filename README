@@ -1,4 +1,4 @@
-Putinvzrivaetdoma uses YShout chat, JQuery, kcaptcha.
+Putinvzrivaetdoma uses YShout chat, JQuery (with jquery.tooltip), kcaptcha.
 
 Set mysql config in /online/stats.php
 
