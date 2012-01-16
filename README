@@ -2,7 +2,7 @@ Putinvzrivaetdoma uses YShout chat, JQuery (with jquery.tooltip), kcaptcha.
 
 Set mysql config in /online/stats.php
 
-Set chat admin pass in /chat/logs/yshout.prefs.txt (broken now).
+Set chat admin pass in /chat/logs/yshout.prefs.txt
 Set storage folder in /chat/php/filestorage.class.php and /online/online.php (we used memdisk).
 
 JSON users stats for JS include: /online/online.php?callback=callback_function
