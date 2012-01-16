@@ -87,7 +87,7 @@ if (isset($_POST['p'])) {
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title>YShout: History</title>
-		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 		<script type="text/javascript" src="js/history.js"></script>
 
 		<link rel="stylesheet" href="../example/css/example.yshout.css" />
