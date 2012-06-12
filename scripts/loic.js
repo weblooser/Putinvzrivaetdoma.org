@@ -2,7 +2,7 @@ $(document).ready( function(){
 //TITS
 var titsUrl;
 $('#matrix').click( function(){
-	titsUrl = "http://super-pvd.narod2.ru/tits"+ Math.floor(Math.random()*13) +".jpg";
+	titsUrl = "images/tits/tits"+ Math.floor(Math.random()*15) +".jpg";
 	$('body').css("background-image", "url('" + titsUrl +"')");
 });
 //Load Chat

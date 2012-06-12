@@ -97,7 +97,7 @@ class YShout {
                         'chatcolor' => $chatcolor,
 			'timestamp' => $timestamp,
 			'admin' => $this->admin,
-			'uid' => md5(ip()),
+			'uid' => md5( md5( ip() )+session_id() ),
 			'adminInfo' => array(
 				'ip' => ip(),
                                 'nickhash' => $nickhash

@@ -1,1 +1,0 @@
-a:2:{s:4:"info";a:1:{s:15:"latestTimestamp";d:1301254041.7104370594024658203125;}s:5:"posts";a:1:{i:0;a:6:{s:8:"nickname";s:9:"Anonymous";s:7:"message";s:8:"тест";s:9:"timestamp";d:1301254041.7104370594024658203125;s:5:"admin";b:1;s:3:"uid";s:32:"39789caa566541fe8c50c22129023091";s:9:"adminInfo";a:1:{s:2:"ip";s:12:"93.170.40.31";}}}}

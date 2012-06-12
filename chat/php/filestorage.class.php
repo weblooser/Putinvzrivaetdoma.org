@@ -4,7 +4,7 @@ class FileStorage {
 
 	function FileStorage($path, $shoutLog = false) {
 		$this->shoutLog = $shoutLog;
-		$folder = '/home/vadik/www/lenta/online/data2/logs';
+		$folder = '../chat/logs';
 //		if (!is_dir($folder)) $folder = '../' . $folder;
 //		if (!is_dir($folder)) $folder = '../' . $folder;
 	

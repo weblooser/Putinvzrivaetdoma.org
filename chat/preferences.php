@@ -26,19 +26,19 @@
 	
 	function resetPrefs() {
 		$defaultPrefs = array(
-			'password' => 'pizda1',								// The password for the CP
+			'password' => 'penis2', // The password for the CP
 
-			'refresh' => 6000,										// Refresh rate
+			'refresh' => 6000,	// Refresh rate
 
-			'logs' => 5,											// Amount of different log files to allow
-			'history' => 100,										// Shouts to keep in history
+			'logs' => 5,		// Amount of different log files to allow
+			'history' => 100,	// Shouts to keep in history
 
-			'inverse' => false,										// Inverse shoutbox / form on top
+			'inverse' => false,	// Inverse shoutbox / form on top
 
-			'truncate' => 15,										// Truncate messages client-side
-			'doTruncate' => true,									// Truncate messages?
+			'truncate' => 15,	// Truncate messages client-side
+			'doTruncate' => true,	// Truncate messages?
 
-			'timestamp' => 24,										// Timestamp format 12- or 24-hour
+			'timestamp' => 24,	// Timestamp format 12- or 24-hour
 
 			'defaultNickname' => 'Nickname',
 			'defaultMessage' => 'Message Text',
@@ -58,8 +58,7 @@
 			
 			'autobanFlood' => 0,									// Autoban people for flooding after X messages
 
-			'censorWords' => 'двач',
-			
+			'censorWords' => '12',			
 			'postFormLink' => 'history',
 
 			'info' => 'inline'
