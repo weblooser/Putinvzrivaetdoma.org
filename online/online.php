@@ -15,7 +15,7 @@ $user  = "";
 $a = $_GET["a"];
 $callback = $_GET["callback"];
 
-$tmpdata = "../chat/logs";
+$tmpdata = "../chat/logs"; //full path required, if you need admincp
 
 if (!is_file("$tmpdata/online.txt"))	
 	{
