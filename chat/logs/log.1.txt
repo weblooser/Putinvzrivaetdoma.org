@@ -1,1 +1,1 @@
-a:2:{s:4:"info";a:1:{s:15:"latestTimestamp";d:1339468036.432199;}s:5:"posts";a:1:{i:0;a:8:{s:8:"nickname";s:10:"Путин";s:7:"message";s:82:":jah: приветствую в чате, упоротый придурок. :jah:";s:5:"level";s:1:"0";s:9:"chatcolor";s:7:"#aebcc7";s:9:"timestamp";d:1339468036.432199;s:5:"admin";b:0;s:3:"uid";s:32:"45c48cce2e2d7fbdea1afc51c7c6ad26";s:9:"adminInfo";a:2:{s:2:"ip";s:13:"192.168.137.2";s:8:"nickhash";s:10:"Путин";}}}}
+﻿

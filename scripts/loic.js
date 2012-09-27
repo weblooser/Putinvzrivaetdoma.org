@@ -2,7 +2,7 @@ $(document).ready( function(){
 //TITS
 var titsUrl;
 $('#matrix').click( function(){
-	titsUrl = "images/tits/tits"+ Math.floor(Math.random()*15) +".jpg";
+	titsUrl = "images/tits/tits"+ Math.floor(Math.random()*17) +".jpg";
 	$('body').css("background-image", "url('" + titsUrl +"')");
 });
 //Load Chat
@@ -58,7 +58,7 @@ function attackStart(){
 	countCtr = setInterval( countRequests, 1000);
 	postReqInt = setInterval( updateScore, 120000);
 	startScore();
-	$('#fireButton').css('background-image','url(http://sites.google.com/site/ivanovpetrovhomepage/zoos/button.png)');
+	$('#fireButton').css('background-image','url(images/button1.png)');
 	$('#smoke').hide();
 	$('#fire').show();
 	attackStarted = true;
@@ -69,7 +69,7 @@ function attackStop(){
 	clearInterval(countAttInt);
 	clearInterval(postReqInt);
 	updateScore();
-	$('#fireButton').css('background-image','url(http://sites.google.com/site/ivanovpetrovhomepage/zoos/button1.png)');
+	$('#fireButton').css('background-image','url(images/buttonh.png)');
 	$('#smoke').show();
 	$('#fire').hide();
 	attackStarted = false;
@@ -1356,7 +1356,12 @@ YShout.prototype = {
                 s = smile(s, ':adv:',  'adv.gif');
                 s = smile(s, ':jah:',  'can.gif');
                 s = smile(s, ':spa:',  'spa.gif');
-		return s;
+		s = smile(s, ':sig:',  'siga.gif');
+                s = smile(s, ':yao:',  'yaom.png');
+                s = smile(s, ':pfp:',  'fpp.png');
+                s = smile(s, ':swi:',  'borg.png');
+                s = smile(s, ':vga:',  'vanga.png');
+                return s;
 	},
 
 	links: function(s) {

@@ -153,7 +153,7 @@ a:hover {
        margin-top: -50px;
 }
 #attackStats{
-	background-image:url(http://i.imgur.com/7Nubq.png);
+	background-image:url(../images/attstatsm.png);
 	background-repeat:no-repeat;
 	background-position: 0 100%;
 	width: 372px;
@@ -318,7 +318,7 @@ a:hover {
 /* Модуль атаки */
 
 #attackModule {
-	background-image:url(http://i.imgur.com/F4Uwp.png);
+	background-image:url(../images/BdRRxM.png);
 	background-repeat:no-repeat;
 	width: 622px;
 	height: 304px;
@@ -343,7 +343,7 @@ a:hover {
 	z-index:10;
 	}
 #fireButton{
-	background-image:url(http://r-img.fotki.yandex.ru/get/4709/40335768.1/0_a12c2_9238f533_orig);
+	background-image:url(../images/buttoninactive.png);
 	width:90px;
 	height:91px;
 	float: left;
@@ -354,7 +354,7 @@ a:hover {
 	z-index:10;
 }
 #fireButton:hover{
-	background-image:url(http://sites.google.com/site/ivanovpetrovhomepage/zoos/buttonh.png);
+	background-image:url(../images/buttonh.png);
 	}
 #privet{
 	width: 270px;
@@ -408,7 +408,7 @@ a:hover {
     font-size:12pt;
     color: #76b2db;
     height: 45px;
-    margin: 20px 0 0 29px;
+    margin: 40px 0 0 29px;
     float: left;
 }
 #barWrap {
@@ -423,7 +423,7 @@ a:hover {
     overflow: hidden;
 }
 #barLine {
-    background: url(http://r-img.fotki.yandex.ru/get/5814/40335768.1/0_a13d7_237e3dd4_orig) no-repeat scroll right center transparent;
+    background: url(../images/barline.png) no-repeat scroll right center transparent;
     width: 156px;
     height: 35px;
     margin: 0 0 0 -156px;
@@ -464,7 +464,7 @@ a:hover {
 	margin: 20px auto 0 auto;
 	width:460px;
 	height:530px;
-	background-image: url(http://img-kiev.fotki.yandex.ru/get/4612/40335768.1/0_a6116_e291699f_orig);
+	background-image: url(../images/chatm.png);
     }
 #chatmessage {
     font-size: 2em;
@@ -496,73 +496,73 @@ a:hover {
     float: left;
 }
 #pg_5 {
-    background-image: url(http://r-img.fotki.yandex.ru/get/5411/40335768.1/0_a13d8_2d4ef2b2_orig);
+    background-image: url(../images/pg.png);
 
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 #pg_6 {
-    background-image: url(http://r-img.fotki.yandex.ru/get/5411/40335768.1/0_a13d8_2d4ef2b2_orig);
+    background-image: url(../images/pg.png);
 
     background-repeat: no-repeat;
     background-position: -9px 0;
 }
 #pg_7 {
-    background-image: url(http://r-img.fotki.yandex.ru/get/5411/40335768.1/0_a13d8_2d4ef2b2_orig);
+    background-image: url(../images/pg.png);
 
     background-repeat: no-repeat;
     background-position: -18px 0;
 }
 #pg_8 {
-    background-image: url(http://r-img.fotki.yandex.ru/get/5411/40335768.1/0_a13d8_2d4ef2b2_orig);
+    background-image: url(../images/pg.png);
 
     background-repeat: no-repeat;
     background-position: -27px 0;
 }
 #pg_9 {
-    background-image: url(http://r-img.fotki.yandex.ru/get/5411/40335768.1/0_a13d8_2d4ef2b2_orig);
+    background-image: url(../images/pg.png);
 
     background-repeat: no-repeat;
     background-position: -36px 0;
 }
 #pg_10 {
-    background-image: url(http://r-img.fotki.yandex.ru/get/5411/40335768.1/0_a13d8_2d4ef2b2_orig);
+    background-image: url(../images/pg.png);
 
     background-repeat: no-repeat;
     background-position: -45px 0;
 }
 #pg_11 {
-    background-image: url(http://r-img.fotki.yandex.ru/get/5411/40335768.1/0_a13d8_2d4ef2b2_orig);
+    background-image: url(../images/pg.png);
 
     background-repeat: no-repeat;
     background-position: -54px 0;
 }
 #pg_12 {
-    background-image: url(http://r-img.fotki.yandex.ru/get/5411/40335768.1/0_a13d8_2d4ef2b2_orig);
+    background-image: url(../images/pg.png);
 
     background-repeat: no-repeat;
     background-position: -63px 0;
 }
 #pg_13 {
-    background-image: url(http://r-img.fotki.yandex.ru/get/5411/40335768.1/0_a13d8_2d4ef2b2_orig);
+    background-image: url(../images/pg.png);
 
     background-repeat: no-repeat;
     background-position: -72px 0;
 }
 #pg_14 {
-    background-image: url(http://r-img.fotki.yandex.ru/get/5411/40335768.1/0_a13d8_2d4ef2b2_orig);
+    background-image: url(../images/pg.png);
 
     background-repeat: no-repeat;
     background-position: -81px 0;
 }
 #pg_15 {
-    background-image: url(http://r-img.fotki.yandex.ru/get/5411/40335768.1/0_a13d8_2d4ef2b2_orig);
+    background-image: url(../images/pg.png);
 
     background-repeat: no-repeat;
     background-position: -90px 0;
 }
 #pg_16 {
-    background-image: url(http://r-img.fotki.yandex.ru/get/5411/40335768.1/0_a13d8_2d4ef2b2_orig);
+    background-image: url(../images/pg.png);
 
     background-repeat: no-repeat;
     background-position: -99px 0;
@@ -605,7 +605,7 @@ a:hover {
 	position:relative;
 	width:460px;
 	height:270px;
-	background-image:url(http://sites.google.com/site/ivanovpetrovhomepage/zoos/usb.png);
+	background-image:url(../images/usb.png);
 	background-repeat:no-repeat;
 	left:50%;
 	margin-left:-250px;
@@ -653,14 +653,14 @@ a:hover {
 #popuprel, #popuprel4 {
     	width:450px;
 	height:250px;
-    background-image:url(http://sites.google.com/site/ivanovpetrovhomepage/zoos/usb.png);
+    background-image:url(../images/usb.png);
     background-repeat:no-repeat;
     background-position:center;
 }
 #popuprel2 li {
     	width:450px;
 	height:250px;
-    background-image:url(http://sites.google.com/site/ivanovpetrovhomepage/zoos/usb.png);
+    background-image:url(../images/usb.png);
     background-repeat:no-repeat;
     background-position:center;
     float: left;
@@ -737,7 +737,7 @@ a:hover {
 #popuprel3 {
     	width:220px;
 	height:290px;
-    background-image:url("http://r-img.fotki.yandex.ru/get/4814/40335768.1/0_a13cb_f1bc28b6_orig");
+    background-image:url("../images/shop.png");
     background-repeat:no-repeat;
     background-position:center;
     color: white;
@@ -1054,7 +1054,7 @@ a:hover {
 
 #ys-input-smiles{
 	display:none;
-	width: 470px;
+	width: 475px;
 	margin: 5px 0 0 0;
 }
 	#ys-cp {

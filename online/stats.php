@@ -20,7 +20,7 @@ $dbTable = "putin_users";
 $action = $_POST[action];
 $nickname = $_POST[nick];
 $chatcolor = $_POST[chatcolor];
-$price_color = 50000;
+$price_color = 5000;
 
 $pattern = '/^#[A-Fa-f0-9]{6}$/';
 if (preg_match($pattern, $chatcolor) == false){
@@ -43,7 +43,8 @@ $level[12] = 700000;
 $level[13] = 1500000;
 $level[14] = 3000000;
 $level[15] = 6666666;//2y
-$level[16] = 10000000;//2y
+$level[16] = 13333332;//2y
+$level[17] = 100000000;//долго, ломать
 
 $titles[0] = "Чмо";
 $titles[1] = "Влетевший";
@@ -51,18 +52,18 @@ $titles[2] = "Щемящийся";
 $titles[3] = "Будущий школьник";
 $titles[4] = "Голодранец";
 $titles[5] = "Пешка";
-$titles[6] = "Младший школьник";
+$titles[6] = "Феечка";
 $titles[7] = "Школьник";
-$titles[8] = "Школьник-терпила";
-$titles[9] = "Терпила";
-$titles[10] = "Сослик";
-$titles[11] = "Услик";
-$titles[12] = "Контр-паукан";
-$titles[13] = "Вице-нуб";
-$titles[14] = "Колчак";
+$titles[8] = "Терпила";
+$titles[9] = "Мурсик";
+$titles[10] = "Овощ";
+$titles[11] = "Эмочка";
+$titles[12] = "Контр-рак";
+$titles[13] = "Вице-краб";
+$titles[14] = "Писюн";
 $titles[15] = "Петросян флота";
-$titles[16] = "Альфазадрот";
-
+$titles[16] = "Anonymous";
+$titles[17] = "Мохнатый сейф";
 
 //if ($_GET['admin'] == 'restore'){
 //    header('Content-type: text/html');
@@ -206,7 +207,7 @@ $titles[16] = "Альфазадрот";
         }
 	$score = $_SESSION['score'];
 	//левел-ап
-        if ($score > $level[$_SESSION['level']+1] && $_SESSION['level'] < 16){
+        if ($score > $level[$_SESSION['level']+1] && $_SESSION['level'] < 17){
             $_SESSION['level']++;
         }
 //        for ($i = 0; $i<=16; $i++){

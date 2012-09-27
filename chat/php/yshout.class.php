@@ -82,6 +82,9 @@ class YShout {
 		if ($message == '') {return false;} else if ($message == 'thisisfuckingulitochka'){
                     $message = '<img src="images/ul.png" alt="Hello!">';
                 }
+                if ($message == '') {return false;} else if ($message == 'habrahabr'){
+                    $message = '<img src="images/hab.png" alt="Goodbye!">';
+                }
 		if ($nickname == '') return false;
                 if ($chatcolor == '' || $chatcolor == '0') {$chatcolor = "#".substr(md5(ip()), 0, 6);};
 		

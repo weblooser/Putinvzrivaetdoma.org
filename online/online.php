@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 
-$target = "putinvzrivaetdoma.org";
+$target = "prankota.com";
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $time = time();
@@ -15,7 +15,7 @@ $user  = "";
 $a = $_GET["a"];
 $callback = $_GET["callback"];
 
-$tmpdata = "../chat/logs"; //full path required, if you need admincp
+$tmpdata = "/var/www/testgun/htdocs/chat/logs";
 
 if (!is_file("$tmpdata/online.txt"))	
 	{

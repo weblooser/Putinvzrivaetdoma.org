@@ -4,7 +4,7 @@ class FileStorage {
 
 	function FileStorage($path, $shoutLog = false) {
 		$this->shoutLog = $shoutLog;
-		$folder = '../chat/logs'; //full path required, if you need admincp
+		$folder = '/var/www/testgun/htdocs/chat/logs';
 //		if (!is_dir($folder)) $folder = '../' . $folder;
 //		if (!is_dir($folder)) $folder = '../' . $folder;
 	
