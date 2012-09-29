@@ -44,7 +44,6 @@ $level[13] = 1500000;
 $level[14] = 3000000;
 $level[15] = 6666666;//2y
 $level[16] = 13333332;//2y
-$level[17] = 100000000;//долго, ломать
 
 $titles[0] = "Чмо";
 $titles[1] = "Влетевший";
@@ -56,14 +55,13 @@ $titles[6] = "Феечка";
 $titles[7] = "Школьник";
 $titles[8] = "Терпила";
 $titles[9] = "Мурсик";
-$titles[10] = "Овощ";
+$titles[10] = "Коштик";
 $titles[11] = "Эмочка";
 $titles[12] = "Контр-рак";
-$titles[13] = "Вице-краб";
+$titles[13] = "Вице-бомж";
 $titles[14] = "Писюн";
 $titles[15] = "Петросян флота";
 $titles[16] = "Anonymous";
-$titles[17] = "Мохнатый сейф";
 
 //if ($_GET['admin'] == 'restore'){
 //    header('Content-type: text/html');
